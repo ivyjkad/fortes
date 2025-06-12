@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Administrador</title>
+    <link rel="stylesheet" href="/pagina/paginasong/ong.css">
+    <link rel="icon" href="/pagina/imagens/plantar.png" type="image/png">
+</head>
+
+<body>
+    <header class="nav">
+        <div class="nav-left">
+            <div class="logo-name"><img src="/pagina/imagens/plantar.png" alt="logo_da_barra"></div>
+            <div class="logo-text">
+                <div class="logo-re">Re</div>
+                <div class="logo-conecta">Conecta</div>
+            </div>
+        </div>
+        <nav class="navbar-right">
+          <a href="/pagina/paginasong/perfilong.html" class="nav-button-ong">Você está aqui!</a>
+            <a href="/pagina/paginasong/pontoentrega.html" class="nav-button-ong">Ponto de Entrega</a>
+            <a href="/pagina/paginasong/calendevento.html" class="nav-button-ong">Calendario de Eventos</a>
+
+            <a href="/index.html" class="nav-button-exit">Sair</a>     
+        </nav>
+    </header>
+    </div>
+
+    <div class="container-perfil">
+
+        <aside class="sidebar">
+            <div class="perfil-menu">
+                <span class="menu-item">Perfil</span>
+                <span class="dropdown-arrow">▼</span>
+            </div>
+            <div class="menu-item-perfil active">Alterar Dados</div>
+        </aside>
+
+        <main class="content-perfil">
+            <div class="breadcrumb">
+                Perfil > Início
+            </div>
+            <div class="notificacao">
+                🔔
+            </div>
+            <section class="perfil-info">
+                <div class="avatar-section">
+                    <div class="avatar-icone">X</div>
+                    <div class="info-details">
+                        <p>Administrativo</p>
+                        <p>Tipo de Conta: ONG/Instituição</p>
+                    </div>
+                </div>
+                <button class="btn-alterar-avatar">Alterar</button>
+
+                <div class="form-group">
+                    <label for="username">Nome de Usuário</label>
+                    <input type="text" id="username" value="">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <div class="password-input-group">
+                        <input type="password" id="password" value="">
+                        <span class="toggle-password">&#128065;</span>
+                    </div>
+                </div>
+
+                <button class="btn-alterar-dados">
+                    Alterar Dados <span class="edit-icon">✎</span>
+                </button>
+            </section>
+        </main>
+    </div>
+
+    <input type="file" id="file-input" accept="image/*" style="display: none;">
+
+    <script src="/pagina/paginasong/ong.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,768 @@
+@font-face {
+    font-family: 'Squada One';
+    /*Fonte dos Titulos*/
+    src: url('/pagina/fontes/SquadaOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Suez One';
+    /*Fonte dos Botoes*/
+    src: url('/pagina/fontes/SuezOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SeoulNamsan';
+    /*Textos*/
+    src: url('/pagina/fontes/SeoulNamsanCondensed-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Share Tech';
+    /*Subtitulos*/
+    src: url('/pagina/fontes/ShareTech-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Skranji';
+    /*Textos Especiais*/
+    src: url('/pagina/fontes/Skranji-Regular.ttf');
+}
+
+/* Barra de navegação */
+body {
+    background-color: #ffffd8;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#C9C67E;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-name img {    /*Plantinha*/
+    display:flex;
+    align-items: center;
+    height: auto;
+    width: 40px;
+    margin-right: 5px;
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+    text-shadow: 2px 4px 3px #0000001a;
+}
+
+
+.logo-re {
+    color: #12231B;
+    font-family: 'Squada One', sans-serif;
+    font-size:3em;
+    font-weight: 700;
+}
+
+
+.logo-conecta {
+    color: #7D4716;
+    font-family: 'Squada One', sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.navbar-right {
+    display: flex;
+}
+a {
+    text-decoration:none;
+}
+
+
+/*BOTOES*/
+/*Botão Ong*/
+.nav-button-ong {
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size:1.4em;
+    font-family: 'Suez One', serif;
+    text-decoration: none;
+    background-color: #12231B;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.nav-button-ong:hover {
+    background-color: #F0F0D9; 
+    color: #000000;
+}
+
+/*Botao Reciclador*/
+.nav-button-recicla {
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size:1.4em;;
+    font-family: 'Suez One', serif;
+    text-decoration: none;
+    background-color: #204031;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-button-recicla:hover {
+    background-color: #a8a665; 
+    color: #000000;
+}
+
+.button-back{
+    background-color: #DADA98;
+    color: #000000;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size:1em;
+    font-family: 'Suez One', serif;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.button-back:hover {
+    background-color: #1f1e1c; 
+    color: #fafafa;
+}
+
+/* Conteudo Principal (abaixo da navegação) */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.inicio-image-container {
+    width:10%;
+    padding:50px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-re {
+    font-family: 'Squada One', sans-serif;
+    font-size: 4em;
+    color: #12231B;
+
+}
+
+.title-conecta {
+    font-family: 'Squada One', sans-serif;
+    font-size: 4em;
+    color: #7D4716;
+}
+
+.main-title-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    margin-top: -60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6em;
+    color:#7D4716;
+    font-family:  'Share Tech';
+}
+
+.proposal-section {
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.section-title {
+    margin-top:-20px;
+    font-family: 'Suez One';
+    font-size: 2em;
+    margin-bottom: 20px;
+    position: relative;
+    color:#8D3A18;
+}
+
+.description {
+    margin-top:-10px;
+    font-family: 'Share Tech';
+    font-size: 1.9em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.slogan {
+    font-family: 'Skranji' ;
+    font-weight: 700;
+    font-size: 1.7em;
+    color:#271607;
+}
+
+
+/*CRIE TODOS AS OUTRAS CARACTERISTICAS DE CSS A PARTIR DAQUI POR FAVOR*/
+/*FORMULARIOS*/
+/*LOGIN DE RECICLADOR!!!!*/
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.titulorc{
+    color: #204031; 
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: 'Squada One';
+}
+
+.login-box {
+    background-color: #92b186; 
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    text-align: left;
+}
+
+.login-box h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    font-family: 'SeoulNamsan';
+}
+
+/*CAMPOS DO FORMS*/
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    background-color: #3e503a;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px 0 0 5px;
+    white-space: nowrap;
+    width: 150px;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'SeoulNamsan';
+    font-size: 1.2em;;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    flex-grow: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    font-size: 1em;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+}
+
+/*mOSTRAR SENHA*/
+.show-password {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+}
+
+.show-password input[type="checkbox"] {
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+}
+
+.show-password label {
+    font-size: 0.9em;
+    color: #000000;
+}
+/*FINAL MOSTRAR SENHA*/
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 0.9em;
+}
+
+.links a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.links img {
+    margin-right: 2px;
+    width: 30px;
+    height: 30px;
+}
+/*ENVIAR*/
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #3e503a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 2em;
+    font-family: 'Squada One';
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    color:#000000;
+    background-color: #C9C67E; 
+}
+/*FINAL DO LOGIN DE RECICLADOR!!!!*/
+
+/*LOGIN DE ONG!!!!*/
+.tituloong {
+    color: #000000; 
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: 'Squada One';
+}
+
+.login-ong {
+    background-color: #050a083b; 
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    text-align: left;
+}
+
+.login-ong h2 {
+    color: #000000e0;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    font-family: 'SeoulNamsan';
+}
+
+/*CAMPOS DO FORMS*/
+.input-groupong {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-groupong label {
+    background-color: #1D1B18;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px 0 0 5px;
+    white-space: nowrap;
+    width: 150px;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'SeoulNamsan';
+    font-size: 1.2em;;
+}
+
+.input-groupong input[type="text"],
+.input-groupong input[type="password"] {
+    flex-grow: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    font-size: 1em;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+}
+
+/*mOSTRAR SENHA*/
+.show-password {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+}
+
+.show-password input[type="checkbox"] {
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+}
+
+.show-password label {
+    font-size: 0.9em;
+    color: #000000;
+}
+/*FINAL MOSTRAR SENHA*/
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 0.9em;
+}
+
+.links a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.links img {
+    margin-right: 2px;
+    width: 30px;
+    height: 30px;
+}
+/*ENVIAR*/
+.ongbutton[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #1D1B18;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 2em;
+    font-family: 'Squada One';
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.ongbutton[type="submit"]:hover {
+    color:#000000;
+    background-color: #F0F0D9;
+}
+.ongbutton a {
+    color:#ffffff;
+}
+/*FIM DO LOGIN ONG*/
+
+/*RECUPERAR CONTA RECICLADOR!!!!*/
+.titulorp {
+    color:#7a0404;
+    text-align: center;
+}
+.login-boxrp {
+    background-color: #c79f87; 
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    text-align: left;
+}
+
+.login-boxrp h2 .recupera-box h2 {
+    color: #7a0404;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.input-grouprp label {
+    background-color: #8D3A18; 
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px 0 0 5px;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'SeoulNamsan';
+}
+
+.input-grouprp input[type="text"],
+.input-grouprp input[type="password"] {
+    flex-grow: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    font-size: 1em;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+}
+
+/*BOTAO RECUPERAR*/
+.recupera-box button[type="submit"] {
+    width: 100%;
+    background-color: #8D3A18;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.3em;
+    transition: background-color 0.3s ease;
+    margin-bottom: 30px;
+    margin-top:30px;
+}
+
+.recupera-box button[type="submit"]:hover {
+    color:#ffffff;
+    background-color: #D06C43;
+}
+
+.back-link {
+    display: block; 
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin-top: 20px;
+    font-weight: bold; 
+}
+.back-link:hover {
+    text-decoration: underline;
+}
+/*FINAL PAGINA RECUPERAÇÃO*/
+
+/*PAGINA DE CADASTRO ONG*/
+
+.registro-box {
+    background-color: #060c0952;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    text-align: left;
+}
+
+.registro-box h2{
+    color: #333;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.input-grouprg {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-grouprg label {
+    background-color: #000000; 
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px 0 0 5px;
+    white-space: nowrap;
+    width: 150px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.input-grouprg input[type="text"],
+.input-grouprg input[type="email"],
+.input-grouprg input[type="tel"],
+.input-grouprg input[type="date"],
+.input-grouprg input[type="password"] {
+    flex-grow: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    font-size: 1em;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+}
+
+.registro-box button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #030503;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px; 
+}
+
+.registror-box button[type="submit"]:hover {
+    background-color: #2c3e29;
+}
+
+.registro-box .subtitle {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 0.95em;
+}
+
+.registro-box .subtitle a {
+    color: #3e503a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.registro-box .subtitle a:hover {
+    text-decoration: underline;
+}
+/*FINAL DA PAGINA DE CADASTRO DE ONG*/
+
+/*COMEÇO PAGINA CADASTRO RECICLADOR*/
+
+.registrorc-box {
+    background-color: #92b186;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    text-align: left;
+}
+
+.registrorc-box h2{
+    color: #333;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.input-grouprc {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-grouprc label {
+    background-color: #12231B; 
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px 0 0 5px;
+    white-space: nowrap;
+    width: 150px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.input-grouprc input[type="text"],
+.input-grouprc input[type="email"],
+.input-grouprc input[type="tel"],
+.input-grouprc input[type="date"],
+.input-grouprc input[type="password"] {
+    flex-grow: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    font-size: 1em;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+}
+
+.registro-box button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #030503;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px; 
+}
+
+.registror-box button[type="submit"]:hover {
+    background-color: #2c3e29;
+}
+
+.registro-box .subtitle {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 0.95em;
+}
+
+.registro-box .subtitle a {
+    color: #3e503a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.registro-box .subtitle a:hover {
+    text-decoration: underline;
+}
+/*Site Responsivo*/
+
+@media (max-width: 768px) {
+
+    .nav { 
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .navbar-right { 
+
+        width: 100%;
+
+        justify-content: space-around;
+
+        margin-top: 10px;
+
+        display: none; 
+
+    }
+
+}
+
+/*Config Imagem*/
+
+@media (max-width: 480px) {
+
+    /* Ajustes específicos para telas menores */
+
+    .section-title {
+
+        font-size: 1.5em;
+
+    }
+
+    .description, .slogan {
+
+        font-size: 1em;
+
+    }
+
+    .inicio-image-container { /* Ajuste o seletor para a imagem de 'inicio' */
+
+        width: 150px;
+
+        height: 150px;
+
+    }
+
+}

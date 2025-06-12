@@ -1,0 +1,535 @@
+@font-face {
+    font-family: 'Squada One';
+    /*Fonte dos Titulos*/
+    src: url('/pagina/fontes/SquadaOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Suez One';
+    /*Fonte dos Botoes*/
+    src: url('/pagina/fontes/SuezOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SeoulNamsan';
+    /*Textos*/
+    src: url('/pagina/fontes/SeoulNamsanCondensed-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Share Tech';
+    /*Subtitulos*/
+    src: url('/pagina/fontes/ShareTech-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Skranji';
+    /*Textos Especiais*/
+    src: url('/pagina/fontes/Skranji-Regular.ttf');
+}
+
+/* Barra de navegação */
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffd8;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C9C67E;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-name img {
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 40px;
+    margin-right: 5px;
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+    text-shadow: 2px 4px 3px #0000001a;
+}
+
+
+.logo-re {
+    color: #12231B;
+    font-family: 'Squada One', sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+
+.logo-conecta {
+    color: #7D4716;
+    font-family: 'Squada One', sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.navbar-right {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*BOTOES*/
+/*Botão Ong*/
+.nav-button-ong {
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.4em;
+    font-family: 'Suez One', serif;
+    text-decoration: none;
+    background-color: #12231B;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-button-ong:hover {
+    background-color: #F0F0D9;
+    color: #000000;
+}
+
+.nav-button-exit {
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.4em;
+    font-family: 'Suez One', serif;
+    text-decoration: none;
+    background-color: #580202;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-button-exit:hover {
+    color: #ffffff;
+    background-color: #b82432;
+}
+
+/*CSS PARA PAGINA PONTOS DE ENTREGA*/
+.titulo {
+    color: #25211E;
+    text-align: center;
+    font-size: 2.4em;
+    font-family: 'Squada One';
+}
+
+header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.map-icon {
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+.carrossel-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.carrossel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrossel-item {
+    flex-shrink: 0;
+    flex-basis: calc(33.333% - 40px);
+    min-width: calc(33.333% - 40px);
+    width: 350px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.map-thumbnail iframe {
+    width: 400px;
+    height: 350px;
+    border-radius: 15px;
+}
+
+.descricao {
+    margin-bottom: 20px;
+    font-family: 'Share Tech';
+    font-size: 1.5em;
+}
+
+.descricao h2 {
+    color: #000000;
+    font-size: 1em;
+    font-family: 'SeoulNamsan';
+}
+
+.descricao h3 {
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.descricao p {
+    color: #777;
+    padding: 20px;
+    margin-top: -10px;
+}
+
+.status.availabled {
+    color: green;
+    font-weight: bold;
+}
+
+.status.availablei {
+    color: rgb(128, 0, 0);
+    font-weight: bold;
+}
+
+.saiba-mais-btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-family: 'Suez One';
+    font-size: 1.5em;
+}
+
+.saiba-mais-btn:hover {
+    background-color: #225324;
+}
+
+/*SETINHAS DO CARROSSEL*/
+.carrossel-nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+/*FIM DO CARROSSEL*/
+/*PAGINA DE EVENTOS*/
+.container {
+    background-color: #cece95;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+
+.add-alterar-btn {
+    background-color: #204031;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-size: 1.6em;
+    font-family: 'Suez One';
+    margin-bottom: 25px;
+    display: block;
+}
+
+.add-alterar-btn:hover {
+    color: #ffffff;
+    background-color: #12231B;
+}
+
+.event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.event-card {
+    background-color: #f7f7dc;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.event-details {
+    margin: 20px;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.event-details h1 {
+    color: #25211E;
+    font-size: 1.8em;
+    font-family: 'Squada One';
+}
+
+.event-details h2,
+.event-details p {
+    color: #25211E;
+    font-size: 1.5em;
+    font-family: 'Share Tech';
+}
+
+.cancel-event-btn {
+    background-color: #5f0e16;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-family: 'Suez One';
+    margin-left: auto;
+}
+
+.cancel-event-btn:hover {
+    color: #fffefe;
+    background-color: #b82432;
+}
+
+/*PERFIL CSS*/
+.container-perfil {
+   background-color: #cece95;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    margin: 20px;
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    min-width: 200px;
+    background-color: #7b6f63;
+    color: white;
+    padding: 20px 0;
+    flex-shrink: 0;
+}
+
+.perfil-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.menu-item-perfil {
+    padding: 10px 20px;
+}
+
+.menu-item-perfil.active {
+    background-color: #5c534a;
+}
+
+.content-perfil {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: white;
+}
+
+.header-perfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.breadcrumb {
+    color: #5c534a;
+    font-size: 0.9em;
+}
+
+.notificacao {
+    float: right;
+    font-size: 1.5em;
+}
+
+.perfil-info {
+    padding: 0;
+    border-radius: 0;
+}
+
+.avatar-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.avatar-icone {
+    width: 100px;
+    height: 100px;
+    background-color: #d3d3d3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #5c534a;
+    margin-right: 70px;
+}
+
+.info-details p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.btn-alterar-avatar {
+    color:#ffffff;
+    font-size: 1.3em;
+    font-family: 'Suez One';
+    background-color: #5c534a;
+    border-radius: 10px;
+    margin-left: 120px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #5c534a;
+}
+
+.form-group input {
+    width: 60%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.password-input-group {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    max-width: 400px;
+}
+
+.password-input-group input {
+    flex-grow: 1;
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.toggle-password {
+    background-color: #f0f0e6;
+    border: 1px solid #ccc;
+    padding: 10px 12px;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    color: #5c534a;
+    font-size: 1.1em;
+}
+
+.btn-alterar-dados {
+    color:#ffffff;
+    font-size: 1.3em;
+    font-family: 'Suez One';
+    background-color: #5c534a;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.edit-icon {
+    font-size: 1.2em;
+}
+
+/*Site Responsivo*/
+
+@media (max-width: 768px) {
+
+    .nav {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .navbar-right {
+
+        width: 100%;
+
+        justify-content: space-around;
+
+        margin-top: 10px;
+
+        display: none;
+
+    }
+
+}

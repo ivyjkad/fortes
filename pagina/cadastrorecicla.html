@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Reciclador</title>
+    <link rel="stylesheet" href="/estilo.css">
+    <link rel="icon" href="/pagina/imagens/plantar.png" type="image/png">
+</head>
+<body>    
+<header class="nav">
+        <div class="nav-left">
+            <div class="logo-name"><img src="/pagina/imagens/plantar.png" alt="logo_da_barra"></div>
+            <div class="logo-text">
+                <div class="logo-re">Re</div>
+                <div class="logo-conecta">Conecta</div>
+                <div class="nav-button-back">
+            <a class="button-back" href="/index.html">Voltar</a>
+        </div>
+            </div>
+        </div>
+        <nav class="navbar-right">
+            <a href="/pagina/ong_inst.html" class="nav-button-ong">ONG/Instituição</a>
+            <a href="/pagina/recicla.html" class="nav-button-recicla">Reciclador</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1 class="titulorc">Reciclador</h1> 
+        <div class="registrorc-box">
+            <h2>Junte-se a nós!</h2>
+            
+                <div class="input-grouprc">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="email ong/instituição" required>
+                </div>
+                <div class="input-grouprc">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" placeholder="nome ong/instituição" required>
+                </div>
+                <div class="input-grouprc">
+                    <label for="cnpj">CNPJ</label>
+                    <input type="text" id="cnpj" placeholder="cnpj ong/instituição" required pattern="\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}" title="Formato: XX.XXX.XXX/XXXX-XX">
+                </div>
+                <div class="input-grouprc">
+                    <label for="foundation-date">Data de Fundacao</label>
+                    <input type="date" id="foundation-date" placeholder="__/__/____" required>
+                </div>
+                <div class="input-grouprc">
+                    <label for="phone">Telefone</label>
+                    <input type="tel" id="phone" placeholder="(00)00000-0000" required>
+                </div>
+                <div class="input-grouprc">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="Digite sua senha de acesso" required>
+                </div>
+                <div class="input-grouprc">
+                    <label for="confirm-password">Confirme <br>sua Senha</label>
+                    <input type="password" id="confirm-password" placeholder="Redigite sua senha" required>
+                </div>
+                <div class="input-grouprg">
+                <button type="submit">Cadastrar</button>
+          
+            </form>
+            
+        </div>
+        <a href="/pagina/recicla.html" class="back-link">Voltar</a> </div>
+    </div>
+    
+    <script src="/pagina/registro.js"></script>
+</body>
+</html>

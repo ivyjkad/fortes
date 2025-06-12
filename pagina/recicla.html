@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Reciclador</title>
+    <link rel="stylesheet" href="/estilo.css">
+    <link rel="icon" href="/pagina/imagens/plantar.png" type="image/png">
+</head>
+<body>    
+<header class="nav">
+        <div class="nav-left">
+            <div class="logo-name"><img src="/pagina/imagens/plantar.png" alt="logo_da_barra"></div>
+            <div class="logo-text">
+                <div class="logo-re">Re</div>
+                <div class="logo-conecta">Conecta</div>
+                <div class="nav-button-back">
+            <a class="button-back" href="/index.html">Voltar</a>
+        </div>
+            </div>
+        </div>
+        <nav class="navbar-right">
+            <a href="/pagina/ong_inst.html" class="nav-button-ong">ONG/Instituição</a>
+            <a href="/pagina/recicla.html" class="nav-button-recicla">Reciclador</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1 class="titulorc">Reciclador</h1>
+        <div class="login-box">
+            <h2>Vamos voltar ao trabalho!</h2>
+            <form>
+                <div class="input-group">
+                    <label for="username-email">Usuario ou Email</label>
+                    <input type="text" id="username-email" placeholder="digite seu usuario/email">
+                </div>
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="digite a sua senha">
+                </div>
+                <div class="show-password">
+                    <input type="checkbox" id="show-password-checkbox">
+                    <label for="show-password-checkbox">Mostrar senha</label>
+                </div>
+                <div class="links">
+                    <a href="/pagina/recuperasenha.html">Esqueci minha senha</a>
+                    <div class="social-login">
+                        <span>Entrar com:</span><br>
+                        <a href="https://g.co/kgs/iXQeTqw" target="_blank">
+                            <img src="/pagina/imagens/google.png" alt="logo da google">
+                            <i class="fab fa-google"></i></img></a> <!--Google-->
+                        
+                        <a href="https://www.icloud.com/" target="_blank">
+                            <img src="/pagina/imagens/logotipo-da-apple.png" alt="logo da apple">
+                            <i class="fab fa-facebook-f"></i></a> <!--ICloud-->
+
+                        <a href="https://pt-br.facebook.com/login/device-based/regular/login/" target="_blank">
+                            <img src="/pagina/imagens/facebook.png" alt="logo do facebook">
+                            <i class="fab fa-apple"></i></a> <!--Facebook-->
+
+                    </div>
+                    <a href="/pagina/cadastrorecicla.html">Novo por aqui?</a>
+                </div>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+    <script src="/pagina/script.js"></script>
+</body>
+</html>
